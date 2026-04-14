@@ -1,0 +1,134 @@
+%%%%%%%%%%%%%%%%%%%
+%% LUT thesis template for LaTeX
+%%%%%%%%%%%%%%%%%%%
+%% Jouni Ritvanen, jouni.ritvanen@lut.fi
+%%%% tested in Overleaf and standalone LaTeX system
+%%%% Overleaf link: https://www.overleaf.com/read/qxdrdsqcmgmg
+%% Standalone configuration: LUT software center LaTeX tools: 
+%% Miktex 23.1
+%% tested front-ends: TeXworks 0.6.7 / TeXmaker 5.1.3 / TeXstudio 4.3.1
+%% standalone compilation:
+%% pdfLaTeX
+%% biber
+%% makeindex main.nlo -s nomencl.ist -o main.nls   %% for nomenclature
+%% pdfLaTeX
+%%%%%%%%%%%%%%%%%%%
+%% version 0.01/2023.07.21: First devel version
+%% version 0.02/2023.09.04: Second devel version
+%% version 0.03/2023.09.14: Third devel version
+%% version 0.04/2023.09.21: Fourth devel version
+%% version 1.00/2023.10.02: First release version
+%% version 1.01/2023.11.28: Part related to confidentiality is updated
+%% version 1.02/2024.09.04: Instructions and acknowledgements updated
+%% version 1.03/2025.06.03: Instructions added to define PDF meta-data
+%% version 1.04/2025.08.13: Declarations page added
+%%%%%%%%%%%%%%%%%%%
+%% Give first the meta-data for the PDF/A
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% IMPORTANT!!!!                                    %
+%% Mandatory data, update with your own data        %
+%% This data will appear in the pdf file properties %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{filecontents*}[overwrite]{\jobname.xmpdata}
+\Title{Title of the work}
+\Author{Author_firstname Author_lastname}
+\Language{en-GB}
+\Subject{The abstract or short description.}
+\Keywords{template\sep thesis\sep LaTeX}
+\end{filecontents*}
+
+%% Document definition start
+\documentclass[a4paper,oneside,12pt,notitlepage]{article}
+\input{pref}  % settings
+\def\version{1.04/2025.08.13}   % version number
+% give you name here, will be printed on the front page, abstract, and tiivistelmä.
+\def\myname{Author Name}
+% give your thesis information here (English), which will be printed on the front page and abstract.
+\def\mytitle{LUT thesis template for \LaTeX}
+\def\mysubtitle{Version \version}       % subtitle
+%%\def\mysubtitle{}                     % no subtitle
+\def\university{Lappeenranta–Lahti University of Technology LUT}
+\def\school{LUT School of Energy Systems}
+%\def\school{LUT Business School}
+%\def\school{LUT School of Engineering Science}
+\def\thesisyear{2025}
+\def\thesistype{Bachelor’s thesis}
+%%\def\thesistype{Master’s thesis}
+\def\degreeprogramme{Degree Programme in Energy Technology}
+%%\def\degreeprogramme{Degree Programme in Business Administration}
+%%\def\degreeprogramme{Degree Programme in Chemical Engineering}
+%%\def\degreeprogramme{Degree Programme in Computational Engineering}
+%%\def\degreeprogramme{Degree Programme in Electrical Engineering}
+%%\def\degreeprogramme{Degree Programme in Environmental Technology}
+%%\def\degreeprogramme{Degree Programme in Industrial Engineering and Management}
+%%\def\degreeprogramme{Degree Programme in Mechanical Engineering}
+%%\def\degreeprogramme{Degree Programme in Social Sciences}
+%%\def\degreeprogramme{Degree Programme in Software Engineering}
+\def\examinerA{Title First name and Last name (optional degree)}
+\def\examinerB{Title First name and Last name (optional degree)}
+% give your thesis information here (Finnish), which will be printed on the tiivistelmä.
+\def\mytitleFIN{LUT opinnäytetyöpohja, \LaTeX}
+\def\mysubtitleFIN{Versio \version}
+\def\universityFIN{Lappeenrannan–Lahden teknillinen yliopisto LUT}
+\def\schoolFIN{LUTin energiajärjestelmien tiedekunta}
+%%\def\schoolFIN{LUTin insinööritieteiden tiedekunta}
+%%\def\schoolFIN{LUT-kauppakorkeakoulu}
+\def\thesistypeFIN{Kandidaatintyö}
+%\def\thesistypeFIN{Diplomityö}
+\def\degreeprogrammeFIN{Energiatekniikan koulutusohjelma}
+%\def\degreeprogrammeFIN{Kauppatieteiden koulutusohjelma}
+%\def\degreeprogrammeFIN{Kemiantekniikan koulutusohjelma}
+%\def\degreeprogrammeFIN{Laskennallisen tekniikan koulutusohjelma}
+%\def\degreeprogrammeFIN{Sähkötekniikan koulutusohjelma}
+%\def\degreeprogrammeFIN{Ympäristötekniikan koulutusohjelma}
+%\def\degreeprogrammeFIN{Tuotantotalouden koulutusohjelma}
+%\def\degreeprogrammeFIN{Konetekniikan koulutusohjelma}
+%\def\degreeprogrammeFIN{Yhteiskuntatieteiden koulutusohjelma}
+%\def\degreeprogrammeFIN{Tietotekniikan koulutusohjelma}
+\def\examinerAFIN{Titteli Etunimi Sukuni (Vaihtoehtoinen oppiarvo)}
+\def\examinerBFIN{Titteli Etunimi Sukuni (Vaihtoehtoinen oppiarvo)}
+
+% remove the next part to clear the nomenclature introduction
+\renewcommand{\nompreamble}{In the present work, variables and constants are denoted using \textit{slanted style}, vectors are denoted using \textbf{bold regular style}, and abbreviations and dimensionless numbers are denoted using regular style. See the SI-unit style \href{https://physics.nist.gov/cuu/Units/checklist.html}{\textcolor{blue}{guide}}. (Note: The lists include some examples, but the author must define all variables used in the thesis according to common practice in the research field. Sometimes this can be challenging as the practices are not universal. Nomenclature example \LaTeX~ entries are given in ch1.tex file. The nomenclature entry should appear in the code after introducing the symbol or abbreviation in the text or equation. Remove this note and other similar notes from the actual thesis.)}
+
+\begin{document}            % Document start
+\pagestyle{empty}           % Page layout: empty
+\setlength{\parindent}{0pt} % No indents
+\include{info}              % Add info page, remove or comment out
+\include{nimio}             % Add front page
+\include{abstract}          % Add eng abstract
+\include{tiivistelma}       % Add fin abstract
+\include{acknowledgments}   % Add acknowledgments
+\include{symbols}           % Add nomenclature
+\include{declarations}      % Add declarations
+\pagestyle{fancy}           % Page layout: fancy with page numbers
+\include{toc}               % Add table of content
+\include{lot_lof}           % Add figure and table lists
+\include{ch1}               % Add chapter 1
+\include{ch2}               % Add chapter 2
+\include{ch3}               % Add chapter 3
+\include{ch4}               % Add chapter 4
+\include{references}        % Add references
+
+%%%%%%%%%%%%%%%%%%%
+%% Appendix section starts here
+%%%%%%%%%%%%%%%%%%%
+\addtocontents{toc}{\cftpagenumbersoff{section}} % Add "Appendices" to table of content without page number
+% Modify the section heading to contain "Appendix" at the beginning
+\titleformat{\section}
+  {\Large}
+  {Appendix \thesection}{1em}{}
+
+% Appendices
+\begin{appendices}
+\renewcommand{\thesection}{\arabic{section}}    % Numbering style
+\input{appA}            % Add appendix 1
+\input{appB}            % Add appendix 2
+\input{appC}            % Add appendix 3
+\input{appD}            % Add appendix 4
+\input{appG}            % Add appendix 5
+\input{appE}            % Add appendix 6
+\input{appF}            % Add appendix 7
+\end{appendices}        % End of appendix sections
+
+\end{document}          % End of document

@@ -1,0 +1,39 @@
+%% Appendix 1
+\pagenumbering{arabic}  % This will reset the page numbering
+%\thispagestyle{empty} % use this command if the page number needs to be removed 
+\section{Text processing and layout in a thesis}\label{App:A}
+
+Good text processing skills make writing your final thesis and using this template easier. Therefore, you should ensure you have sufficient basic skills to edit long documents with \LaTeX~ before you start. This involves applying \LaTeX~ code structures, understanding automatic referencing and knowing how to divide your text into sections. 
+
+The essential thing is to understand the following basics of \LaTeX:
+
+\begin{itemize}
+    \item \LaTeX~needs a compiler. Compiler can be stand-alone in the computer or cloud-based, such as \href{https://www.overleaf.com/}{\textcolor{blue}{Overleaf}}
+    \item \LaTeX~will remove all the unnecessary spaces and linebreaks. When you want to start a new paragraph, make one empty line into your code, \LaTeX~will start the paragraph.
+    \item Do not enter any numbering manually. \LaTeX~has efficient automatized tools for this. Section, page, figure, and table numbering are automatically applied in this template. They keep the numbers in the right order even if you modify, add or remove content.
+    \item Do not add hyphenation at the end of a line manually. \LaTeX~automatic hyphenation tool can be used in this template. It should work with both English and Finnish languages.
+\end{itemize}
+
+\subsection*{Line spacing, font, margins, alignment, page numbering and headings}
+
+Official layout guidelines state that the line spacing should be 1.5, except for the abstract and possible direct citations, where the spacing is 1. You can choose from two fonts: Times New Roman (12 pt) or Arial (11 pt). This template has been written in Adobe Times Roman 12 pt.
+
+Leave the following margins:
+\begin{itemize}
+    \item top and left 35 mm.
+    \item bottom and right 20 mm. 
+\end{itemize}
+
+The page number of the title page is 1, but the page numbering should not be visible before the first page of the table of contents. Place the page numbers at the top, either centred or in the right-hand corner. Page numbering ends on the final page of the reference list: appendices do not have page numbers unless the appendix is multiple pages. For a single-page appendix, use the command \verb|\thispagestyle{empty}| to remove the page number.
+
+Always use section styles in your thesis (\verb|\section{}|, \verb|\subsection{}|, \verb|\subsubsection{}|). Always place section headings (\verb|\section{}|) on a new page. Apply \verb|\clearpage| command before the section heading starts the section from the new page. If you add large figures or tables, remember to check that the empty space after the figure or image covers no more than 20\% of the page. 
+
+The heading numbering starts from the introduction and continues consecutively. Do not place a period after the heading number. Do not number the heading of the reference list at the end of the thesis.
+
+The thesis should include no more than three heading levels, and the headings should progress logically. If you need even more detailed subheadings, do not number them; leave them out of the table of contents. Concise headings that describe the text sufficiently are the best. You can use question marks or exclamation marks but do not add a period if the heading is a regular sentence.
+
+A heading cannot follow a heading. Always write something between them. For instance, there must be text between headings 1 and 1.1 with two or more sentences.
+
+Lists are a good way to express things clearly. Use the same type of bullet or symbol in lists throughout your thesis. A section should never end in a list. There should always be two or three sentences after a list. 
+
+\clearpage % This command will start the next section from the new page
