@@ -4,3 +4,9 @@ Using Satellite Data for CBRN (Chemical, Biological,
 Radiological, and Nuclear) Threat Detection, Monitoring,
 and Modelling
 
+
+for LEO:
+
+Book
+Satellite networking : principles and protocols
+Sun, Zhili, author.
