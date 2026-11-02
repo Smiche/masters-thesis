@@ -1,7 +1,9 @@
 \section{Artifact Design}
-
-\subsection{System Architecture Overview}
+This chapter outlines the system architecture and design decisions across each layer of the artifact. The artifact design is comprised of the following individual parts: high level system design, network topology outline, software design and raw data protocol design. The various components and systems of the artifact are designed with common design principles and cohesion across the various layers in mind.
+\subsection{High Level Design}
 % some diagrams, overall system view, protocols, links etc
+A high level design describes the goals and high level objectives of the artifact. An architectural overview diagram is used to visualize the boundaries, links, systems and components comprising the software artifact. The primary design decisions are driven by the technology stack and network provider selection described in Chapter~1. Additionally, the availability of computing hardware, local network providers, internal documentation of CBRN device communication protocols and pre-existing knowledge of CBRN software systems influence the design further. \par
+The high level goal of the artifact is to enable and benchmark the bi-directional traffic of telemetry data across public internet infrastructure within the project specific constraints. 
 \subsection{Protocol Design}
 \subsection{Design Limitations and Simplifications}
 % some things need to be simplified, but it still makes tests realistic
