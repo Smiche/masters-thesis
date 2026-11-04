@@ -1,9 +1,31 @@
 \section{Artifact Design}
-This chapter outlines the system architecture and design decisions across each layer of the artifact. The artifact design is comprised of the following individual parts: high level system design, network topology outline, software design and raw data protocol design. The various components and systems of the artifact are designed with common design principles and cohesion across the various layers in mind.
+This chapter outlines the system architecture and design decisions across each layer of the artifact. The artifact design is comprised of the following individual parts: high level system design, network topology outline, software application design and raw data protocol design. The various components and systems of the artifact are designed with common design principles and cohesion across the various layers in mind. The deliverables include the system design and a software application referred to as SatLINK.
 \subsection{High Level Design}
 % some diagrams, overall system view, protocols, links etc
-A high level design describes the goals and high level objectives of the artifact. An architectural overview diagram is used to visualize the boundaries, links, systems and components comprising the software artifact. The primary design decisions are driven by the technology stack and network provider selection described in Chapter~1. Additionally, the availability of computing hardware, local network providers, internal documentation of CBRN device communication protocols and pre-existing knowledge of CBRN software systems influence the design further. \par
-The high level goal of the artifact is to enable and benchmark the bi-directional traffic of telemetry data across public internet infrastructure within the project specific constraints. 
+A high level design describes the high level objectives of the artifact. Additionally, the design outlines boundaries, links, systems and components comprising the software artifact. The primary design decisions are driven by the technology stack and network provider selection described in Chapter~1. Additionally, the availability of computing hardware, local network providers, internal documentation of CBRN device communication protocols and pre-existing knowledge of CBRN software systems influence the design further. The high level goal of the artifact is to enable and benchmark the bi-directional traffic of telemetry data across public internet infrastructure within the project specific constraints.
+\subsubsection{Component Overview}
+The artifact is designed with two distinct computing units in mind. The first unit is a Kuber 212E industrial grade computer, which represents a remote mobile unit. This unit is responsible for running the CBRN data generation and protocol handling components of the artifact. The second unit is a virtual machine hosted on a server grade computer provided by the employer, which represents a command center. The two units are connected over public internet infrastructure using a commercial LEO satellite network (Starlink) as the primary communication link. Terrestrial internet infrastructure is used to connect the central data collection node to the satellite provider's ground gateway as shown on Figure~\ref{fig:comm-link}.
+\begin{figure}[ht]
+    \centering
+    \includegraphics[width=\textwidth]{figs/hld-communication_link.png}
+    \caption{High-level communication link between the remote mobile unit and the command center.}
+    \label{fig:comm-link}
+\end{figure}
+
+The SatLINK software application provides the features required by both the mobile unit and command centre nodes. This is achieved by implementing both the server and client functionality, selectable at start-up time via command line arguments. Additionally, the decision to bundle all functionality in a single software package, simplifies distribution and ensures consistency by using the same dependencies, interfaces and logic across both node types. 
+\begin{figure}[ht]
+    \centering
+    \includegraphics[width=\textwidth]{figs/hld-software_components.png}
+    \caption{C4 diagram detailing the various components within the software application SatLINK.}
+    \label{fig:components-satlink}
+\end{figure}
+\subsubsection{Communication Protocol Stack}
+The transport layer is  utilizing two interchangeable protocols: TCP and QUIC. These protocols are chosen to align with the research objectives defined in Chapter~1, allowing direct comparison between the conventional TCP/TLS baseline and the QUIC-based approach. Both protocols operate over the same physical LEO satellite link, as seen in Figure~\ref{fig:comm-link}, so that the comparison isolates the effect of the transport protocol. The software application communicates using a single protocol at a time that can be selected at start-up time by providing a command line argument. This functionality enables isolated A/B testing of both transport protocols separately, avoiding interference when using both simultaneously.
+
+The application layer uses a raw ASCII-based data protocol designed specifically for this project. The protocol structure is loosely based on the internal communication protocols used by CBRN device manufacturers. This design choice ensures that the simulated payloads are representative of real CBRN system traffic without requiring access to proprietary hardware or vendor-specific interface documentation.
+
+\subsubsection{Programming Language and Toolchain}
+The artifact is implemented in Go (Golang). Go was selected because it offers native or well-supported libraries for the key technical requirements of the project: mutual TLS (mTLS) authentication for secure peer-to-peer communication, QUIC transport with the ability to customize congestion control algorithms, and integration with numerical and machine learning libraries. Furthermore, Go is a production-grade language commonly used at Observis Oy, which simplifies the future maintenance and encorporation of the artifact within Observis Oy's software platform. Additionally, Go features cross-compilation, allowing developers to compile self-contained portable binaries for multiple platforms from a single development environment. 
 \subsection{Protocol Design}
 \subsection{Design Limitations and Simplifications}
 % some things need to be simplified, but it still makes tests realistic
