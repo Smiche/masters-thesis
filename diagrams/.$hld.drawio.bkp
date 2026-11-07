@@ -1,0 +1,224 @@
+<mxfile host="Electron" pages="3">
+  <diagram name="communication_link" id="e_bSecWG88XKDUWpagAr">
+    <mxGraphModel dx="1140" dy="712" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="nf4x5K9KZALrSu3Lyq27-1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;fillColor=#fff2cc;strokeColor=#d6b656;" value="" vertex="1">
+          <mxGeometry height="300" width="710" x="230" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="2QIm_NKtCmjl0ibRYIfQ-2" edge="1" parent="1" source="2QIm_NKtCmjl0ibRYIfQ-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;startArrow=classic;startFill=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="2QIm_NKtCmjl0ibRYIfQ-3">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="370" y="325" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="2QIm_NKtCmjl0ibRYIfQ-12" connectable="0" parent="2QIm_NKtCmjl0ibRYIfQ-2" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];inheritText=1;defaultLabelBackgroundColor=page;" value="Ethernet" vertex="1">
+          <mxGeometry relative="1" x="0.0746" y="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="2QIm_NKtCmjl0ibRYIfQ-1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Kuber-212E&lt;div&gt;&lt;b&gt;Mobile Unit&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;i&gt;Client&lt;/i&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="180" x="90" y="360" as="geometry" />
+        </mxCell>
+        <mxCell id="2QIm_NKtCmjl0ibRYIfQ-4" edge="1" parent="1" source="2QIm_NKtCmjl0ibRYIfQ-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;entryX=-0.012;entryY=0.432;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;startArrow=classic;startFill=1;" target="2QIm_NKtCmjl0ibRYIfQ-6">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="390" y="80" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="2QIm_NKtCmjl0ibRYIfQ-14" connectable="0" parent="2QIm_NKtCmjl0ibRYIfQ-4" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];inheritText=1;defaultLabelBackgroundColor=page;" value="Service Link" vertex="1">
+          <mxGeometry relative="1" x="-0.3232" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="2QIm_NKtCmjl0ibRYIfQ-3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Starlink ground terminal&lt;div&gt;Router, Firewall &amp;amp; Switch&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="330" y="295" as="geometry" />
+        </mxCell>
+        <mxCell id="2QIm_NKtCmjl0ibRYIfQ-9" edge="1" parent="1" source="2QIm_NKtCmjl0ibRYIfQ-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;startArrow=classic;startFill=1;" target="2QIm_NKtCmjl0ibRYIfQ-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="2QIm_NKtCmjl0ibRYIfQ-15" connectable="0" parent="2QIm_NKtCmjl0ibRYIfQ-9" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];inheritText=1;defaultLabelBackgroundColor=page;" value="Feeder Link" vertex="1">
+          <mxGeometry relative="1" x="0.2635" y="-1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="2QIm_NKtCmjl0ibRYIfQ-6" parent="1" style="shape=mxgraph.networks2.icon;aspect=fixed;fillColor=#EDEDED;strokeColor=#000000;gradientColor=#5B6163;network2IconShadow=1;network2bgFillColor=none;labelPosition=center;verticalLabelPosition=bottom;align=center;verticalAlign=top;network2Icon=mxgraph.networks2.satellite;network2IconXOffset=0.0149;network2IconYOffset=-0.00046;network2IconW=1.1553;network2IconH=0.9741;labelPerimeter=1;" value="" vertex="1">
+          <mxGeometry height="69.14" width="82" x="420" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="2QIm_NKtCmjl0ibRYIfQ-7" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Starlink constellation" vertex="1">
+          <mxGeometry height="30" width="82" x="470" y="219.14" as="geometry" />
+        </mxCell>
+        <mxCell id="2QIm_NKtCmjl0ibRYIfQ-18" edge="1" parent="1" source="2QIm_NKtCmjl0ibRYIfQ-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;defaultLabelBackgroundColor=page;startArrow=classic;startFill=1;" target="2QIm_NKtCmjl0ibRYIfQ-16">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="2QIm_NKtCmjl0ibRYIfQ-20" connectable="0" parent="2QIm_NKtCmjl0ibRYIfQ-18" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];inheritText=1;defaultLabelBackgroundColor=page;" value="WAN" vertex="1">
+          <mxGeometry relative="1" x="-0.0123" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="2QIm_NKtCmjl0ibRYIfQ-8" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Terrestrial network" vertex="1">
+          <mxGeometry height="60" width="120" x="510" y="295" as="geometry" />
+        </mxCell>
+        <mxCell id="2QIm_NKtCmjl0ibRYIfQ-10" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;div&gt;Virtual Machine&lt;/div&gt;&lt;b&gt;Command Center&lt;/b&gt;&lt;div&gt;&lt;i&gt;Server&lt;/i&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="909" y="355" as="geometry" />
+        </mxCell>
+        <mxCell id="2QIm_NKtCmjl0ibRYIfQ-17" edge="1" parent="1" source="2QIm_NKtCmjl0ibRYIfQ-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;startArrow=classic;startFill=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="2QIm_NKtCmjl0ibRYIfQ-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="2QIm_NKtCmjl0ibRYIfQ-19" connectable="0" parent="2QIm_NKtCmjl0ibRYIfQ-17" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];inheritText=1;defaultLabelBackgroundColor=page;" value="Ethernet&lt;br&gt;NAT UDP" vertex="1">
+          <mxGeometry relative="1" x="0.0064" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="2QIm_NKtCmjl0ibRYIfQ-16" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Router, Firewall &amp;amp; Switch appliance" vertex="1">
+          <mxGeometry height="60" width="120" x="707" y="295" as="geometry" />
+        </mxCell>
+        <mxCell id="nf4x5K9KZALrSu3Lyq27-4" parent="1" style="html=1;shadow=0;dashed=0;align=center;verticalAlign=middle;shape=mxgraph.arrows2.twoWayArrow;dy=0.65;dx=22;" value="TCP/mTLS &amp;amp; QUIC/mTLS" vertex="1">
+          <mxGeometry height="60" width="639" x="270" y="360" as="geometry" />
+        </mxCell>
+        <mxCell id="nf4x5K9KZALrSu3Lyq27-5" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Network infrastructure" vertex="1">
+          <mxGeometry height="20" width="130" x="230" y="140" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="jbS1EvzEnEOzh05NF018" name="application_communication">
+    <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="-6ZYxjriWhx6BPx486ao-4" edge="1" parent="1" source="-6ZYxjriWhx6BPx486ao-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;startArrow=classic;startFill=1;dashed=1;" target="-6ZYxjriWhx6BPx486ao-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="-6ZYxjriWhx6BPx486ao-6" connectable="0" parent="-6ZYxjriWhx6BPx486ao-4" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];inheritText=1;defaultLabelBackgroundColor=page;" value="TCP/mTLS&lt;br&gt;QUIC/mTLS" vertex="1">
+          <mxGeometry relative="1" x="-0.1193" y="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-6ZYxjriWhx6BPx486ao-1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Client&lt;div&gt;Mobile Unit&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="210" y="190" as="geometry" />
+        </mxCell>
+        <mxCell id="-6ZYxjriWhx6BPx486ao-2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Server&lt;div&gt;Command Center&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="620" y="190" as="geometry" />
+        </mxCell>
+        <mxCell id="-6ZYxjriWhx6BPx486ao-5" edge="1" parent="1" source="-6ZYxjriWhx6BPx486ao-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;startArrow=classic;startFill=1;dashed=1;" target="-6ZYxjriWhx6BPx486ao-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="-6ZYxjriWhx6BPx486ao-8" connectable="0" parent="-6ZYxjriWhx6BPx486ao-5" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];inheritText=1;defaultLabelBackgroundColor=page;" value="TCP/mTLS&lt;br&gt;QUIC/mTLS" vertex="1">
+          <mxGeometry relative="1" x="-0.0543" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-6ZYxjriWhx6BPx486ao-3" parent="1" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;fillColor=#232F3D;strokeColor=none;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;pointerEvents=1;shape=mxgraph.aws4.internet;labelPerimeter=1;" value="Internet" vertex="1">
+          <mxGeometry height="48" width="78" x="436" y="196" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="J_H7xIQ767Z4ijeHta5q" name="software_components">
+    <mxGraphModel dx="1967" dy="712" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <object placeholders="1" c4Name="SatLINK" c4Type="ContainerScopeBoundary" c4Application="Container" label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;&lt;div style=&quot;text-align: left&quot;&gt;%c4Name%&lt;/div&gt;&lt;/b&gt;&lt;/font&gt;&lt;div style=&quot;text-align: left&quot;&gt;[%c4Application%]&lt;/div&gt;" id="WELTmacY9vUFx1weiI90-1">
+          <mxCell parent="1" style="rounded=1;fontSize=11;whiteSpace=wrap;html=1;dashed=1;arcSize=20;fillColor=none;strokeColor=#666666;fontColor=#333333;labelBackgroundColor=none;align=left;verticalAlign=bottom;labelBorderColor=none;spacingTop=0;spacing=10;dashPattern=8 4;metaEdit=1;rotatable=0;perimeter=rectanglePerimeter;noLabel=0;labelPadding=0;allowArrows=0;connectable=0;expand=0;recursiveResize=0;editable=1;pointerEvents=0;absoluteArcSize=1;points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];" vertex="1">
+            <mxGeometry height="400" width="1020" x="90" y="180" as="geometry" />
+          </mxCell>
+        </object>
+        <object placeholders="1" c4Name="mTLS Authenticator" c4Type="Component" c4Technology="package crypto/tls" c4Description="Handles mTLS authentication and certificate loading." label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;%c4Name%&lt;/b&gt;&lt;/font&gt;&lt;div&gt;[%c4Type%: %c4Technology%]&lt;/div&gt;&lt;br&gt;&lt;div&gt;&lt;font style=&quot;font-size: 11px&quot;&gt;%c4Description%&lt;/font&gt;&lt;/div&gt;" id="WELTmacY9vUFx1weiI90-2">
+          <mxCell parent="1" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#63BEF2;fontColor=#ffffff;align=center;arcSize=6;strokeColor=#2086C9;metaEdit=1;resizable=0;points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];" vertex="1">
+            <mxGeometry height="120" width="240" x="455" y="410" as="geometry" />
+          </mxCell>
+        </object>
+        <object placeholders="1" c4Name="CLI Parser" c4Type="Component" c4Technology="package flags" c4Description="Parses CLI arguments" label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;%c4Name%&lt;/b&gt;&lt;/font&gt;&lt;div&gt;[%c4Type%: %c4Technology%]&lt;/div&gt;&lt;br&gt;&lt;div&gt;&lt;font style=&quot;font-size: 11px&quot;&gt;%c4Description%&lt;/font&gt;&lt;/div&gt;" id="WELTmacY9vUFx1weiI90-3">
+          <mxCell parent="1" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#63BEF2;fontColor=#ffffff;align=center;arcSize=6;strokeColor=#2086C9;metaEdit=1;resizable=0;points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];" vertex="1">
+            <mxGeometry height="120" width="240" x="130" y="250" as="geometry" />
+          </mxCell>
+        </object>
+        <mxCell id="WELTmacY9vUFx1weiI90-5" edge="1" parent="1" source="WELTmacY9vUFx1weiI90-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;" target="WELTmacY9vUFx1weiI90-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="WELTmacY9vUFx1weiI90-6" connectable="0" parent="WELTmacY9vUFx1weiI90-5" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];inheritText=1;defaultLabelBackgroundColor=page;" value="Startup" vertex="1">
+          <mxGeometry relative="1" x="-0.0305" y="4" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <object placeholders="1" c4Name="Execute binary" c4Type="Operating System" c4Description="Startup of the software application triggered through the OS and supplying CLI arguments." label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;%c4Name%&lt;/b&gt;&lt;/font&gt;&lt;div&gt;[%c4Type%]&lt;/div&gt;&lt;br&gt;&lt;div&gt;&lt;font style=&quot;font-size: 11px&quot;&gt;&lt;font color=&quot;#cccccc&quot;&gt;%c4Description%&lt;/font&gt;&lt;/div&gt;" id="WELTmacY9vUFx1weiI90-4">
+          <mxCell parent="1" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#8C8496;fontColor=#ffffff;align=center;arcSize=10;strokeColor=#736782;metaEdit=1;resizable=0;points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];" vertex="1">
+            <mxGeometry height="120" width="240" x="-200" y="250" as="geometry" />
+          </mxCell>
+        </object>
+        <object placeholders="1" c4Name="Transport.TCP" c4Type="Component" c4Technology="package net" c4Description="Initiates TCP Client/Server." label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;%c4Name%&lt;/b&gt;&lt;/font&gt;&lt;div&gt;[%c4Type%: %c4Technology%]&lt;/div&gt;&lt;br&gt;&lt;div&gt;&lt;font style=&quot;font-size: 11px&quot;&gt;%c4Description%&lt;/font&gt;&lt;/div&gt;" id="WELTmacY9vUFx1weiI90-7">
+          <mxCell parent="1" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#63BEF2;fontColor=#ffffff;align=center;arcSize=6;strokeColor=#2086C9;metaEdit=1;resizable=0;points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];" vertex="1">
+            <mxGeometry height="120" width="240" x="800" y="410" as="geometry" />
+          </mxCell>
+        </object>
+        <object placeholders="1" c4Name="Transport.QUIC" c4Type="Component" c4Technology="package quic-go" c4Description="Initiates QUIC Client/Server. Handles connection ID tracking and congestion control." label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;%c4Name%&lt;/b&gt;&lt;/font&gt;&lt;div&gt;[%c4Type%: %c4Technology%]&lt;/div&gt;&lt;br&gt;&lt;div&gt;&lt;font style=&quot;font-size: 11px&quot;&gt;%c4Description%&lt;/font&gt;&lt;/div&gt;" id="WELTmacY9vUFx1weiI90-8">
+          <mxCell parent="1" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#63BEF2;fontColor=#ffffff;align=center;arcSize=6;strokeColor=#2086C9;metaEdit=1;resizable=0;points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];" vertex="1">
+            <mxGeometry height="120" width="240" x="130" y="410" as="geometry" />
+          </mxCell>
+        </object>
+        <object placeholders="1" c4Name="Protocol Simulator" c4Type="Component" c4Technology="simulator" c4Description="Simulates device generated data." label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;%c4Name%&lt;/b&gt;&lt;/font&gt;&lt;div&gt;[%c4Type%: %c4Technology%]&lt;/div&gt;&lt;br&gt;&lt;div&gt;&lt;font style=&quot;font-size: 11px&quot;&gt;%c4Description%&lt;/font&gt;&lt;/div&gt;" id="WELTmacY9vUFx1weiI90-13">
+          <mxCell parent="1" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#63BEF2;fontColor=#ffffff;align=center;arcSize=6;strokeColor=#2086C9;metaEdit=1;resizable=0;points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];" vertex="1">
+            <mxGeometry height="120" width="240" x="820" y="250" as="geometry" />
+          </mxCell>
+        </object>
+        <mxCell id="WELTmacY9vUFx1weiI90-19" edge="1" parent="1" source="WELTmacY9vUFx1weiI90-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;curved=1;curveGeometry=1;" target="WELTmacY9vUFx1weiI90-7">
+          <mxGeometry relative="1" x="-0.8613" as="geometry">
+            <mxPoint x="371" y="470" as="sourcePoint" />
+            <mxPoint x="461" y="470" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WELTmacY9vUFx1weiI90-26" connectable="0" parent="WELTmacY9vUFx1weiI90-19" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];inheritText=1;defaultLabelBackgroundColor=page;" value="Initialize/Send/Receive" vertex="1">
+          <mxGeometry relative="1" x="-0.8675" as="geometry">
+            <mxPoint x="126" y="9" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <object placeholders="1" c4Name="Benchmarker" c4Type="Component" c4Technology="main" c4Description="Main state machine. Benchmarking communication metrics." label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;%c4Name%&lt;/b&gt;&lt;/font&gt;&lt;div&gt;[%c4Type%: %c4Technology%]&lt;/div&gt;&lt;br&gt;&lt;div&gt;&lt;font style=&quot;font-size: 11px&quot;&gt;%c4Description%&lt;/font&gt;&lt;/div&gt;" id="WELTmacY9vUFx1weiI90-16">
+          <mxCell parent="1" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#63BEF2;fontColor=#ffffff;align=center;arcSize=6;strokeColor=#2086C9;metaEdit=1;resizable=0;points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];" vertex="1">
+            <mxGeometry height="120" width="240" x="455" y="250" as="geometry" />
+          </mxCell>
+        </object>
+        <mxCell id="WELTmacY9vUFx1weiI90-17" edge="1" parent="1" source="WELTmacY9vUFx1weiI90-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;defaultLabelBackgroundColor=page;" target="WELTmacY9vUFx1weiI90-16">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="WELTmacY9vUFx1weiI90-24" connectable="0" parent="WELTmacY9vUFx1weiI90-17" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];inheritText=1;defaultLabelBackgroundColor=page;" value="Configure" vertex="1">
+          <mxGeometry relative="1" x="-0.1598" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WELTmacY9vUFx1weiI90-18" edge="1" parent="1" source="WELTmacY9vUFx1weiI90-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;defaultLabelBackgroundColor=page;curved=1;curveGeometry=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;" target="WELTmacY9vUFx1weiI90-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="WELTmacY9vUFx1weiI90-25" connectable="0" parent="WELTmacY9vUFx1weiI90-18" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];inheritText=1;defaultLabelBackgroundColor=page;" value="Initialize/Send/Receive" vertex="1">
+          <mxGeometry relative="1" x="0.119" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WELTmacY9vUFx1weiI90-20" edge="1" parent="1" source="WELTmacY9vUFx1weiI90-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;defaultLabelBackgroundColor=page;" target="WELTmacY9vUFx1weiI90-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="WELTmacY9vUFx1weiI90-30" connectable="0" parent="WELTmacY9vUFx1weiI90-20" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];inheritText=1;defaultLabelBackgroundColor=page;" value="Authenticate" vertex="1">
+          <mxGeometry relative="1" x="-0.0379" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WELTmacY9vUFx1weiI90-22" edge="1" parent="1" source="WELTmacY9vUFx1weiI90-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;defaultLabelBackgroundColor=page;curved=1;curveGeometry=1;" target="WELTmacY9vUFx1weiI90-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="WELTmacY9vUFx1weiI90-29" connectable="0" parent="WELTmacY9vUFx1weiI90-22" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];inheritText=1;defaultLabelBackgroundColor=page;" value="Authenticate" vertex="1">
+          <mxGeometry relative="1" x="-0.0939" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WELTmacY9vUFx1weiI90-27" edge="1" parent="1" source="WELTmacY9vUFx1weiI90-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;defaultLabelBackgroundColor=page;" target="WELTmacY9vUFx1weiI90-16">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="WELTmacY9vUFx1weiI90-28" connectable="0" parent="WELTmacY9vUFx1weiI90-27" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];inheritText=1;defaultLabelBackgroundColor=page;" value="Generate payloads" vertex="1">
+          <mxGeometry relative="1" x="-0.0453" y="-1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

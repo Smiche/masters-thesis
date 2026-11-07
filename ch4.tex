@@ -9,16 +9,18 @@ The artifact is designed with two distinct computing units in mind. The first un
     \centering
     \includegraphics[width=\textwidth]{figs/hld-communication_link.png}
     \caption{High-level communication link between the remote mobile unit and the command center.}
-    \label{fig:comm-link}
+    \label{fig:comm-link}j
 \end{figure}
 
-The SatLINK software application provides the features required by both the mobile unit and command centre nodes. This is achieved by implementing both the server and client functionality, selectable at start-up time via command line arguments. Additionally, the decision to bundle all functionality in a single software package, simplifies distribution and ensures consistency by using the same dependencies, interfaces and logic across both node types. 
+The SatLINK software application provides the features required by both the mobile unit and command centre nodes. This is achieved by implementing both the server and client functionality, selectable at start-up time via command line arguments. Additionally, the decision to bundle all functionality in a single software package simplifies distribution and ensures consistency by using the same dependencies, interfaces and logic across both node types. 
 \begin{figure}[ht]
     \centering
     \includegraphics[width=\textwidth]{figs/hld-software_components.png}
     \caption{C4 diagram detailing the various components within the software application SatLINK.}
     \label{fig:components-satlink}
 \end{figure}
+
+The internal architecture of SatLINK is built around six main components, as illustrated in Figure~\ref{fig:components-satlink}. The execution of the application is started by the operating system, which invokes the binary with command line arguments that are parsed by the CLI Parser component. The parsed configuration is then handed to the Benchmarker, which serves as the central state machine responsible for orchestrating the benchmarking workflow and recording communication metrics. The Benchmarker relies on the Protocol Simulator to generate synthetic CBRN payloads and passes them to the selected transport component for transmission. Two interchangeable transport components, Transport.TCP and Transport.QUIC, implement the client and server logic for their respective protocols. Both of these transport components depend on the mTLS Authenticator to manage mutual TLS credentials and certificate verification. This modular design allows the Benchmarker to operate with either transport without modification, while the transport components share a common authentication layer.
 \subsubsection{Communication Protocol Stack}
 The transport layer is  utilizing two interchangeable protocols: TCP and QUIC. These protocols are chosen to align with the research objectives defined in Chapter~1, allowing direct comparison between the conventional TCP/TLS baseline and the QUIC-based approach. Both protocols operate over the same physical LEO satellite link, as seen in Figure~\ref{fig:comm-link}, so that the comparison isolates the effect of the transport protocol. The software application communicates using a single protocol at a time that can be selected at start-up time by providing a command line argument. This functionality enables isolated A/B testing of both transport protocols separately, avoiding interference when using both simultaneously.
 
